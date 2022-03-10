@@ -1,5 +1,5 @@
 {
-    "0": {
+    "even": {
         "0":[
             ["ALOO PARANTHA","CURD, PICKLE","EGG-1NO/BANANA 1NO"],
             ["CHAPATTI","KADAI VEG","BRIYANI","CHICKEN GRAVE - NONVEG","KADAI PANNER - VEG","ONION RAITHA"],
@@ -43,7 +43,7 @@
             ["CHAPATTI","WHITE RICE","GREENMOONG DHALL","VEG MALAI KOFTA","CURD RICE","PICKLE","FRUIT KESARI"]
         ]
     },  
-    "1": {
+    "odd": {
         "0":[
             ["VEG MUGHLAI PARATHA","CURD,PICKLE","EGG-1NO/BANANA 1NO"],
             ["CHAPATTI","CHICKEN BRIYANI -NONVEG","VEG BRIYANI","PANNER BUTTER MASALA","KADAI VEG","ONION RAITHA"],
