@@ -39,6 +39,18 @@ function setMenu(data,day)
     {
         weekAns="even";
     }
+
+    if(weekAns=="odd" && dayNo==3)
+    {
+        document.querySelector("#specialMenu").classList.add("visible");
+        document.querySelector("#specialMenu").classList.remove("invisible");
+    }
+    else
+    {
+        document.querySelector("#specialMenu").classList.add("invisible");
+        document.querySelector("#specialMenu").classList.remove("visible");
+    }
+
     console.log(dayNo,weekNo,weekAns);
     let dayMenu = data[weekAns][dayNo];
     

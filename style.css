@@ -5,7 +5,3 @@ body {
 .items {
     background-color: yellow;
 }
-
-#date.clear-button {
-    display: none;
-}
