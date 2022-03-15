@@ -5,3 +5,35 @@ body {
 .items {
     background-color: yellow;
 }
+
+.bf1 {
+    transform: translateX(-500px);
+}
+
+#breakfast {
+    transition-duration: 1.5s;
+}
+
+.ln1 {
+    transform: translateY(-500px);
+}
+
+#lunch {
+    transition-duration: 1.5s;
+}
+
+.sn1 {
+    transform: translateY(500px);
+}
+
+#snacks {
+    transition-duration: 1.5s;
+}
+
+.dn1 {
+    transform: translateX(500px);
+}
+
+#dinner {
+    transition-duration: 1.5s;
+}

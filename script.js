@@ -113,3 +113,9 @@ function setMenu(data,day)
 
 }
 
+
+document.querySelector("#breakfast").classList.remove("bf1");
+document.querySelector("#lunch").classList.remove("ln1");
+document.querySelector("#snacks").classList.remove("sn1");
+document.querySelector("#dinner").classList.remove("dn1");
+
