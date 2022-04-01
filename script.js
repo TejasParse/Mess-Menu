@@ -13,10 +13,10 @@ document.querySelector("#date").addEventListener("change",()=>{
     console.log(temp.getDate());
 });
 
-breakfastEssen = ["WHEAT BREAD","BUTTER JAM","TEA/COFFEE/MILK"]
+breakfastEssen = ["BREAD/BUTTER/JAM","TEA/COFFEE/MILK"]
 lunchEssen = ["PICKLE/SUGAR/SALT"]
 snacksEssen = ["TEA/COFFEE/MILK"]
-dinnerEssen = ["PICKLE/SUGAR/SALT"]
+dinnerEssen = ["PICKLE/SUGAR/SALT","BUTTER MILK"]
 
 function getMenu(dayClass)
 {
@@ -29,18 +29,8 @@ function getMenu(dayClass)
 function setMenu(data,day)
 {
     let dayNo = day.getDay();
-    let weekNo = parseInt(day.getDate()/7);
-    let weekAns;
-    if(weekNo%2==0)
-    {
-        weekAns="odd";
-    }
-    else
-    {
-        weekAns="even";
-    }
-
-    if(weekAns=="odd" && dayNo==3)
+    
+    if(dayNo==3)
     {
         document.querySelector("#specialMenu").classList.add("visible");
         document.querySelector("#specialMenu").classList.remove("invisible");
@@ -51,8 +41,7 @@ function setMenu(data,day)
         document.querySelector("#specialMenu").classList.remove("visible");
     }
 
-    console.log(dayNo,weekNo,weekAns);
-    let dayMenu = data[weekAns][dayNo];
+    let dayMenu = data["all"][dayNo];
     
     let breakfast = document.querySelector("#breakfast");
     let breakfastMenu = [...dayMenu[0],...breakfastEssen];
